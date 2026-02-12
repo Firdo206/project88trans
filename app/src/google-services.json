@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1025141470265",
+    "project_id": "project88trans",
+    "storage_bucket": "project88trans.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1025141470265:android:76ad92243f5bbb8727c9e8",
+        "android_client_info": {
+          "package_name": "com.example.project88trans"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1025141470265-otklui8r7fvg3mqima0ckgs3dje3p563.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.project88trans",
+            "certificate_hash": "6dedeb7a83e837829f51256fec88e1654252e0fc"
+          }
+        },
+        {
+          "client_id": "1025141470265-mfpa643b4q3gkbhf5b61m5a806n7589s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJW3rpc6zne2VvO8scy9JG0TVfUnxIl2k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1025141470265-mfpa643b4q3gkbhf5b61m5a806n7589s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

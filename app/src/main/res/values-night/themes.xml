@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Project88trans" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <!-- FIX RIPPLE PUTIH -->
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="colorControlHighlight">@color/ripple_dark</item>
+
+    </style>
+
+</resources>

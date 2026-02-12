@@ -1,0 +1,17 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Base.Theme.Project88trans" parent="Theme.Material3.DayNight.NoActionBar">
+
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:fitsSystemWindows">true</item>
+
+        <!-- FIX RIPPLE PUTIH -->
+        <item name="rippleColor">@color/ripple_dark</item>
+        <item name="colorControlHighlight">@color/ripple_dark</item>
+
+    </style>
+
+    <style name="Theme.Project88trans" parent="Base.Theme.Project88trans" />
+</resources>

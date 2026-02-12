@@ -1,0 +1,48 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNoRek"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No Rek: 1234567890 (Bank XYZ)"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnChooseFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih Bukti Transfer"
+                android:layout_marginTop="12dp"
+                app:backgroundTint="@color/primary_red"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnKirim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Kirim"
+        app:backgroundTint="@color/primary_red"
+        android:textColor="@color/white"/>
+</LinearLayout>

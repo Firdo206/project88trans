@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- ====================== HEADER GAYA KAI ====================== -->
+    <LinearLayout
+        android:id="@+id/headerContainer"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:orientation="vertical"
+        android:background="@drawable/bg_header"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesanan Saya"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="Semua pesanan saya dan menunggu pembayaran"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!-- Placeholder kode transaksi saat klik item (opsional) -->
+        <TextView
+            android:id="@+id/tvKodeTransaksiHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kode transaksi: -"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"/>
+
+        <!-- Icon Riwayat Pesanan (bulat) -->
+        <FrameLayout
+            android:id="@+id/btnRiwayat"
+            android:layout_width="46dp"
+            android:layout_height="46dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_circle_white"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_history" />
+        </FrameLayout>
+
+        <!-- Container card Pending / Wait Confirmation -->
+        <LinearLayout
+            android:id="@+id/headerHighlightContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameRiwayat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <!-- ====================== CARD PUTIH MELENGKUNG + FILTER ====================== -->
+    <LinearLayout
+        android:id="@+id/cardContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerContainer"
+        android:orientation="vertical"
+        android:background="@drawable/bg_round_top_white"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/tvKategoriTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pesanan Saya"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- CHIP FILTER -->
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupFilter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:chipSpacing="8dp"
+            app:singleSelection="true"
+            android:paddingBottom="6dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSemua"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semua"
+                android:checked="true"
+                style="@style/MyChipChoice"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tour"
+                style="@style/MyChipChoice"/>
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bus"
+                style="@style/MyChipChoice"/>
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+
+    <!-- ====================== LIST PESANAN ====================== -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvPesanan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardContainer"
+        android:layout_above="@id/bottomNavigation"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:clipToPadding="false"/>
+
+    <!-- ====================== BOTTOM NAVIGATION ====================== -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:menu="@menu/bottom_nav_menu"
+        app:itemIconTint="@color/black"
+        app:itemTextColor="@color/black" />
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">88TRANS</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="faq_text">
+1. Booking &amp; Pemesanan\n
+&#8226; Bagaimana cara memesan tiket perjalanan?\n
+  Pilih destinasi dan tanggal, lalu ikuti langkah checkout hingga pembayaran selesai.\n\n
+&#8226; Apakah saya bisa memesan tanpa akun?\n
+  Untuk keamanan dan kemudahan, pemesanan hanya bisa dilakukan setelah login.\n\n
+&#8226; Bagaimana cara cek status pemesanan saya?\n
+  Masuk ke menu Riwayat Booking pada profil Anda.\n\n
+
+2. Pembayaran\n
+&#8226; Metode pembayaran apa saja yang tersedia?\n
+  Kami mendukung transfer bank, kartu kredit/debit, dan e-wallet (GoPay, OVO, Dana, ShopeePay).\n\n
+&#8226; Apa yang harus saya lakukan jika pembayaran gagal?\n
+  Silakan coba kembali atau hubungi CS jika saldo sudah terpotong tapi tiket belum terbit.\n\n
+&#8226; Bisakah saya membayar dengan cicilan?\n
+  Ya, tersedia cicilan kartu kredit untuk nominal tertentu.\n\n
+
+3. Perjalanan\n
+&#8226; Bagaimana cara melihat detail tiket saya?\n
+  Semua tiket dapat dilihat di menu Booking Saya lengkap dengan kode booking dan invoice.\n\n
+&#8226; Apakah saya bisa mengubah jadwal perjalanan setelah booking?\n
+  Bisa, sesuai dengan kebijakan maskapai/hotel. Biaya tambahan mungkin berlaku.\n\n
+&#8226; Apa yang terjadi jika saya terlambat datang?\n
+  Silakan hubungi CS kami agar kami bantu sesuai ketentuan penyedia layanan.\n\n
+
+4. Akun &amp; Profil\n
+&#8226; Bagaimana cara mengubah email/nomor HP saya?\n
+  Masuk ke menu Settings → Edit Akun.\n\n
+&#8226; Saya lupa password, bagaimana cara resetnya?\n
+  Gunakan fitur Lupa Password, lalu ikuti instruksi melalui email/nomor HP Anda.\n\n
+&#8226; Bagaimana cara menghapus akun saya?\n
+  Hubungi tim CS kami melalui email resmi untuk proses penghapusan akun.\n\n
+
+5. Promo &amp; Voucher\n
+&#8226; Bagaimana cara menggunakan voucher promo?\n
+  Masukkan kode voucher saat checkout pada halaman pembayaran.\n\n
+&#8226; Kenapa voucher saya tidak bisa digunakan?\n
+  Pastikan voucher masih berlaku dan sesuai syarat (destinasi/tanggal tertentu).
+</string>
+
+</resources>

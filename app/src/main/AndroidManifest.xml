@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.project88trans">
+    <!-- Izin yang dibutuhkan aplikasi -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Project88Trans"
+        android:usesCleartextTraffic="true">
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.project88trans.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- SplashActivity sebagai launcher utama -->
+
+        <activity
+            android:name=".Activity.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Project88Trans">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Activity untuk halaman utama (guest) -->
+        <activity
+            android:name=".Activity.MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" /> <!-- Activity untuk autentikasi pengguna -->
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".Activity.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+        <activity
+            android:name=".Activity.ForgotPasswordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" /> <!-- Activity tambahan untuk menu keamanan akun -->
+        <activity
+            android:name=".Activity.VerificationEmailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" /> <!-- Activity setelah pengguna login -->
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+        <activity
+            android:name=".Activity.BookingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" /> <!-- ✅ ArmadaActivity ditambahkan di sini -->
+        <activity
+            android:name=".Activity.ArmadaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+        <activity
+            android:name=".Activity.BookingDetailActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+
+        <activity
+            android:name=".Activity.RingkasanBookingActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+
+        <activity
+            android:name=".Activity.PesananSayaActivity"
+            android:exported="false"
+            android:theme="@style/Theme.Project88Trans" />
+        <activity
+            android:name=".Activity.PembayaranActivity"
+            android:exported="false" />
+
+
+
+    </application>
+
+</manifest>
